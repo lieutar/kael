@@ -1,0 +1,37 @@
+BODY
+    {
+	SCROLLBAR-FACE-COLOR: #F5F5F5; 
+	FONT-SIZE: 5px; 
+	BACKGROUND: #FFFFFF; 
+	SCROLLBAR-HIGHLIGHT-COLOR: #FFFFFF; 
+	SCROLLBAR-SHADOW-COLOR: #E6E6E6; 
+	COLOR: #FFFFFF; 
+	SCROLLBAR-3DLIGHT-COLOR: #FFFFFF; 
+	SCROLLBAR-ARROW-COLOR: #666666; 
+	SCROLLBAR-TRACK-COLOR: #FFFFFF; 
+	SCROLLBAR-DARKSHADOW-COLOR: #666666
+    }
+.bg {  background-repeat: repeat; background-color: #FFFFFF; background-attachment: fixed; background-image: url(../images/bg.gif); background-position: left top}
+.bg2 {  background-color: #FFFEF6; background-repeat: no-repeat}
+.font_jp_m {  font-family: "‚l‚r ‚oƒSƒVƒbƒN", "Osaka"; font-size: 12px; color: #333333}
+.font_jp_14 {  font-family: "‚l‚r ‚oƒSƒVƒbƒN", "Osaka"; font-size: 14px; color: #333333}
+.font2_12_b {  font-family: "‚l‚r ‚oƒSƒVƒbƒN", "Osaka"; font-size: 12px; font-weight: bold; color: #666666; line-height: normal}
+.font2_12 { font-family: "‚l‚r ‚oƒSƒVƒbƒN", "Osaka"; font-size: 12px; font-weight: normal; color: #666666; line-height: 18px}
+.font_jp_14_B { font-family: "‚l‚r ‚oƒSƒVƒbƒN", "Osaka"; font-size: 14px; color: #333333; font-weight: bold}
+.main_box {  background-attachment: scroll; background-image: url(../images/bg_main.gif); background-repeat: repeat-y; background-position: left top; width: 770px}
+.copyright {  font-family: "‚l‚r ‚oƒSƒVƒbƒN", "Osaka"; font-size: 12px; color: #CCCCCC}
+.font_m {  font-family: "‚l‚r ‚oƒSƒVƒbƒN", "Osaka"; font-size: 10px; color: #666666}
+.font2_10 { font-family: "‚l‚r ‚oƒSƒVƒbƒN", "Osaka"; font-size: 10px; font-weight: normal; color: #666666; line-height: 18px }
+.font2_12_red { font-family: "‚l‚r ‚oƒSƒVƒbƒN", "Osaka"; font-size: 12px; font-weight: bold; color: #CC3300; line-height: normal }
+.font2_12_employ { font-family: "‚l‚r ‚oƒSƒVƒbƒN", "Osaka"; font-size: 12px; font-weight: normal; color: #333333; line-height: 18px }
+.font2_12_employ2 { font-family: "‚l‚r ‚oƒSƒVƒbƒN", "Osaka"; font-size: 12px; font-weight: bold; color: #FF3300; line-height: normal }
+.font2_12_333333_b { font-family: "‚l‚r ‚oƒSƒVƒbƒN", "Osaka"; font-size: 12px; font-weight: bold; color: #333333; line-height: 18px }
+.empoly {  font-family: "‚l‚r ‚oƒSƒVƒbƒN", "Osaka"; font-size: 12px; color: #666666; background-color: #EFEFEF}
+.box580 {  height: auto; width: 580px}
+.font2_12_dark { font-family: "‚l‚r ‚oƒSƒVƒbƒN", "Osaka"; font-size: 12px; font-weight: bold; color: #333333; line-height: 18px }
+.font2_10_b {  font-family: "‚l‚r ‚oƒSƒVƒbƒN", "Osaka"; font-size: 10px; font-weight: bold; color: #666666}
+.font2_12_y { font-family: "‚l‚r ‚oƒSƒVƒbƒN", "Osaka"; font-size: 12px; font-weight: bold; color: #9D871E; line-height: 18px }
+.font2_12_w { font-family: "‚l‚r ‚oƒSƒVƒbƒN", "Osaka"; font-size: 12px; font-weight: bold; color: #FFFFFF; line-height: 18px }
+.font2_12_com { font-family: "‚l‚r ‚oƒSƒVƒbƒN", "Osaka"; font-size: 12px; font-weight: bold; color: #004D26; line-height: 18px }
+.font2_12_left { font-family: "‚l‚r ‚oƒSƒVƒbƒN", "Osaka"; font-size: 12px; font-weight: normal; color: #666666; line-height: 18px ; text-align: left}
+.faq_box {  width: 580px; height: auto}

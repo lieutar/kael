@@ -1,0 +1,21 @@
+BODY
+    {
+	SCROLLBAR-FACE-COLOR: #FFFEF6; 
+	FONT-SIZE: 9px; 
+	BACKGROUND: #FFFFFF; 
+	SCROLLBAR-HIGHLIGHT-COLOR: #DADADA; 
+	SCROLLBAR-SHADOW-COLOR: #DADADA; 
+	COLOR: #DADADA; 
+	SCROLLBAR-3DLIGHT-COLOR: #818181; 
+	SCROLLBAR-ARROW-COLOR: #818181; 
+	SCROLLBAR-TRACK-COLOR: #B2A896; 
+	SCROLLBAR-DARKSHADOW-COLOR: #666666
+    }
+.bg {  background-repeat: repeat; background-color: #FFFFFF; background-attachment: fixed; background-image: url(../images/bg.gif); background-position: left top}
+.bg2 {  background-color: #FFFEF6; background-repeat: no-repeat}
+.font_jp_m {  font-family: "‚l‚r ‚oƒSƒVƒbƒN", "Osaka"; font-size: 12px; color: #333333}
+.font_jp_14 {  font-family: "‚l‚r ‚oƒSƒVƒbƒN", "Osaka"; font-size: 14px; color: #333333}
+.font2_12_b {  font-family: "‚l‚r ‚oƒSƒVƒbƒN", "Osaka"; font-size: 12px; font-weight: bold; color: #333333; line-height: normal}
+.font2_12 { font-family: "‚l‚r ‚oƒSƒVƒbƒN", "Osaka"; font-size: 12px; font-weight: normal; color: #333333; line-height: normal}
+.font_jp_14_B { font-family: "‚l‚r ‚oƒSƒVƒbƒN", "Osaka"; font-size: 14px; color: #333333; font-weight: bold}
+.main_box {  background-attachment: scroll; background-image: url(../images/bg_main.gif); background-repeat: repeat-y; background-position: left top}

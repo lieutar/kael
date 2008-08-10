@@ -1,0 +1,71 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=Shift_JIS">
+<!-- TemplateBeginEditable name="doctitle" -->
+<title>:::::::: Reds ::::::::</title>
+<!-- TemplateEndEditable -->
+<link href="../css/style.css" rel="stylesheet" type="text/css">
+
+
+<!-- TemplateBeginEditable name="head" --><!-- TemplateEndEditable -->
+</head>
+
+<body bgcolor="#FFFFFF" text="#666666" link="#333333" vlink="#333333" alink="#FF0000" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+<table width="760" border="0" cellspacing="0" cellpadding="0">
+	<tr>
+		<td><img src="../images/spacer.gif" width="760" height="5"></td>
+	</tr>
+	<tr>
+		<td bgcolor="#990033"><img src="../images/spacer.gif" width="105" height="20" border="0"></td>
+	</tr>
+	<tr>
+		<td><img src="../images/spacer.gif" width="760" height="4"></td>
+	</tr>
+</table>
+
+<table width="760" border="0" cellspacing="0" cellpadding="0">
+	<tr>
+		<td bgcolor="#666666">&nbsp;</td>
+		<td><img src="../images/head01.gif" width="359" height="80"></td>
+		<td><img src="../images/head02.gif" width="171" height="80"></td>
+	</tr>
+	<tr>
+		<td><img src="../images/spacer.gif" width="230" height="38"></td>
+		<td><img src="../images/head03.gif" width="359" height="38"></td>
+		<td><img src="../images/head04.gif" width="171" height="38"></td>
+	</tr>
+</table>
+<!-- TemplateBeginEditable name="title" -->
+<table width="760" border="0" cellspacing="0" cellpadding="0">
+	<tr>
+		<td><img src="../images/head05.gif" width="476" height="5"></td>
+		<td bgcolor="#990033"><img src="../images/spacer.gif" width="284" height="5"></td>
+	</tr>
+	<tr>
+		<td><img src="../images/head06.gif" width="476" height="41"></td>
+		<td><img src="../images/spacer.gif" width="284" height="41"></td>
+	</tr>
+</table>
+<!-- TemplateEndEditable --><br>
+
+<table width="740" border="0" cellspacing="0" cellpadding="5">
+	<tr valign="top">
+		<td width="105"><img src="../images/spacer.gif" width="100" height="20" border="0"></td>
+		<td><!-- TemplateBeginEditable name="contents" -->contents<!-- TemplateEndEditable --></td>
+	</tr>
+</table>
+<table width="760" border="0" cellspacing="0" cellpadding="0">
+	<tr>
+		<td width="105"><img src="../images/foot01.gif" width="105" height="72"></td>
+		<td width="655" align="right" valign="bottom" class="small"> || <a href="javascript:window.close()">CLOSE</a> ||</td>
+	</tr>
+	<tr>
+		<td colspan="2"><img src="../images/foot02.gif" width="760" height="9"></td>
+	</tr>
+	<tr>
+		<td colspan="2" class="footer">&nbsp;Copyright:(C)2002 Reds Inc. All Rights Reserved.</td>
+	</tr>
+</table>
+</body>
+</html>

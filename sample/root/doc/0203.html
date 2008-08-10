@@ -1,0 +1,762 @@
+<?
+ini_set("include_path",	ini_get("include_path") .
+	( substr(php_uname(),0,7) == "Windows"
+	  ? ";..\\php_lib"
+	  : ":../php_lib" ));
+
+include_once("RPS_DB.php");
+include_once("RPS_LIB.php");
+
+
+$db = new RPS_DB("./admin/data/info"         ,
+		 array("ttl", "ctgl", "info"),
+		 true);
+
+?>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><!-- InstanceBegin template="/Templates/reds.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=EUC-JP">
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>Brains</title>
+<!-- InstanceEndEditable -->
+<meta name="Keywords" content="ホームページ制作 ソリューション 新規事業開発 デザイン メディア戦略">
+<meta name="Description" content="ハイクオリティな技術と最適なデザインでユニークかつ魅力的なソリューションをお客様にご提供">
+<link href="css/bg.css" rel="stylesheet" type="text/css">
+<!-- InstanceBeginEditable name="head" --><!-- InstanceEndEditable -->
+<meta name="description" content="FW MX DW MX HTML">
+
+<link rel="stylesheet" href="css/bg.css" type="text/css">
+</head>
+<body leftmargin="0" topmargin="0" marginwidth="0" marginheight="0" class="bg" text="#666666" link="#333333" vlink="#333333">
+<table width="100%" border="0" cellspacing="0" cellpadding="0" height="100%">
+  <tr> 
+    <td width="770" height="170" background="images/bg_company.gif"><object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=5,0,0,0" width="770" height="170">
+        <param name=movie value="swf/company.swf">
+        <param name=quality value=high>
+        <embed src="swf/company.swf" quality=high pluginspage="http://www.macromedia.com/jp/shockwave/download/index.cgi?P1_Prod_Version=ShockwaveFlash" type="application/x-shockwave-flash" width="770" height="170">
+        </embed> 
+      </object></td>
+    <td background="images/bg_company.gif">　</td>
+  </tr>
+  <tr> 
+    <td width="770">
+      <table width="770" border="0" cellspacing="0" cellpadding="0" class="main_box" height="100%">
+        <tr>
+          <td height="111"> 
+            <table border="0" cellpadding="0" cellspacing="0" width="159">
+              <!-- fwtable fwsrc="名称未設定" fwbase="company.gif" fwstyle="Dreamweaver" fwdocid = "742308039" fwnested="0" -->
+              <tr> 
+                <td><img src="img/spacer.gif" width="159" height="1" border="0"></td>
+                <td><img src="img/spacer.gif" width="1" height="1" border="0"></td>
+              </tr>
+              <tr> 
+                <td><a href="02.html"><img name="company_r1_c1" src="images/company1.gif" width="159" height="30" border="0"></a></td>
+                <td><img src="img/spacer.gif" width="1" height="30" border="0"></td>
+              </tr>
+              <tr> 
+                <td><a href="0201.html" target="_parent"><img name="company_r2_c1" src="images/company2.gif" width="159" height="30" border="0"></a></td>
+                <td><img src="img/spacer.gif" width="1" height="30" border="0"></td>
+              </tr>
+              <tr> 
+                <td><a href="0202.html" target="_parent"><img name="company_r3_c1" src="images/company3.gif" width="159" height="30" border="0"></a></td>
+                <td><img src="img/spacer.gif" width="1" height="30" border="0"></td>
+              </tr>
+              <tr> 
+                <td><img name="company_r4_c1" src="images/company_4.gif" width="159" height="30" border="0"></td>
+                <td><img src="img/spacer.gif" width="1" height="30" border="0"></td>
+              </tr>
+            </table>
+          </td>
+          <td height="111"> 
+            <div align="center">
+              <table width="500" border="0" cellspacing="0" cellpadding="0">
+                <tr> 
+                  <td> 
+                    <h3><strong><span class="font_jp_14_B"><img src="images/spacer.gif" width="10" height="1">エキスプレスグループ</span></strong></h3>
+                  </td>
+                </tr>
+              </table>
+              <br>
+              <table width="500" border="0" cellspacing="0" cellpadding="0">
+                <tr> 
+                  <td class="medium"><img src="images/spacer.gif" width="10" height="1"><img src="images/img0303_01.gif" width="94" height="26" vspace="5" border="0"></td>
+                </tr>
+                <tr> 
+                  <td class="medium"><img src="images/spacer.gif" width="10" height="1"><a href="http://www.express.co.jp/" class="font2_12_b" target="_blank">（株）エキスプレス</a></td>
+                </tr>
+              </table>
+              
+            </div>
+          </td>
+        </tr>
+        <tr> 
+          <td height="122"> </td>
+          <td> 
+            
+            <div align="center">
+              <table width="500" border="0" cellpadding="0" cellspacing="0" class="font2_10">
+                <tr> 
+                  <td width="100" class="font2_10_b"> 
+                    <div align="right">所在地</div>
+                  </td>
+                  <td width="10" ><img src="images/spacer.gif" width="10" height="8"></td>
+                  <td width="470" class="font2_10" >◆東京本社</td>
+                </tr>
+                <tr> 
+                  <td class="font2_10_b" height="6"> 
+                    <div align="right"></div>
+                  </td>
+                  <td  width="10" height="6">　</td>
+                  <td class="font2_10" height="6" >〒150-0002 東京都渋谷区広尾5-8-14</td>
+                </tr>
+                <tr> 
+                  <td class="font2_10_b"> 
+                    <div align="right"></div>
+                  </td>
+                  <td  width="10">　</td>
+                  <td class="font2_10" >TEL　03-3447-1866（代表）</td>
+                </tr>
+                <tr> 
+                  <td class="font2_10_b"> 
+                    <div align="right"></div>
+                  </td>
+                  <td  width="10">　</td>
+                  <td class="font2_10" >◆大阪本社</td>
+                </tr>
+                <tr> 
+                  <td class="font2_10_b" height="13"> 
+                    <div align="right"></div>
+                  </td>
+                  <td  width="10" height="13">　</td>
+                  <td class="font2_10" height="13" >〒530-0047　大阪市北区西天満6-5-17</td>
+                </tr>
+                <tr> 
+                  <td class="font2_10_b"> 
+                    <div align="right"></div>
+                  </td>
+                  <td  width="10">　</td>
+                  <td class="font2_10" >06-6315-3100（代表）</td>
+                </tr>
+                <tr> 
+                  <td class="font2_10_b"> 
+                    <div align="right"></div>
+                  </td>
+                  <td  width="10">　</td>
+                  <td class="font2_10" >◆名古屋</td>
+                </tr>
+                <tr> 
+                  <td class="font2_10_b"> 
+                    <div align="right"></div>
+                  </td>
+                  <td  width="10">　</td>
+                  <td class="font2_10" >〒460-0008　名古屋市中区栄3-31-7　大河内ビル</td>
+                </tr>
+                <tr> 
+                  <td class="font2_10_b"> 
+                    <div align="right"></div>
+                  </td>
+                  <td  width="10">　</td>
+                  <td class="font2_10" >TEL　052-261-7054（代表）</td>
+                </tr>
+                <tr> 
+                  <td class="font2_10_b">　</td>
+                  <td  width="10">　</td>
+                  <td class="font2_10" >◆渋谷オフィス</td>
+                </tr>
+                <tr> 
+                  <td class="font2_10_b">　</td>
+                  <td  width="10">　</td>
+                  <td class="font2_10" >〒150-0002 東京都渋谷区渋谷1-11-8</td>
+                </tr>
+                <tr> 
+                  <td class="font2_10_b" height="18">　</td>
+                  <td  width="10" height="18">　</td>
+                  <td class="font2_10" height="18" >TEL　03-5485-1200（代表）</td>
+                </tr>
+                <tr> 
+                  <td class="font2_10_b"> 
+                    <div align="right"></div>
+                  </td>
+                  <td  width="10">　</td>
+                  <td class="font2_10" >◆千里オフィス</td>
+                </tr>
+                <tr> 
+                  <td class="font2_10_b"> 
+                    <div align="right"></div>
+                  </td>
+                  <td  width="10">　</td>
+                  <td class="font2_10" >〒562-0035　大阪府箕面市船場東1-15-31</td>
+                </tr>
+                <tr> 
+                  <td class="font2_10_b"> 
+                    <div align="right"></div>
+                  </td>
+                  <td  width="10">　</td>
+                  <td class="font2_10" >TEL　0727-28-8891（代表）</td>
+                </tr>
+                <tr> 
+                  <td class="font2_10_b">　</td>
+                  <td  width="10">　</td>
+                  <td class="font2_10" >◆銀座オフィス</td>
+                </tr>
+                <tr> 
+                  <td class="font2_10_b">　</td>
+                  <td  width="10">　</td>
+                  <td class="font2_10" >〒104-0061 東京都中央区銀座2-11-15</td>
+                </tr>
+                <tr> 
+                  <td class="font2_10_b">　</td>
+                  <td  width="10">　</td>
+                  <td class="font2_10" >TEL　03-3545-9011（代表）</td>
+                </tr>
+                <tr> 
+                  <td class="font2_10_b"> 
+                    <div align="right">設立</div>
+                  </td>
+                  <td  width="10">　</td>
+                  <td class="font2_10" >1961年9月21日</td>
+                </tr>
+                <tr> 
+                  <td class="font2_10_b"> 
+                    <div align="right">資本金</div>
+                  </td>
+                  <td  width="10">　</td>
+                  <td class="font2_10" >4億5000万円</td>
+                </tr>
+                <tr> 
+                  <td class="font2_10_b"> 
+                    <div align="right">代表者</div>
+                  </td>
+                  <td  width="10">　</td>
+                  <td class="font2_10" >代表取締役　大富國正</td>
+                </tr>
+                <tr> 
+                  <td class="font2_10_b"> 
+                    <div align="right">事業内容</div>
+                  </td>
+                  <td  width="10">　</td>
+                  <td class="font2_10" >テレビ番組、CM、映像ソフトの企画・制作・販売、出版、</td>
+                </tr>
+                <tr> 
+                  <td class="font2_10_b"> 
+                    <div align="right"></div>
+                  </td>
+                  <td  width="10">　</td>
+                  <td class="font2_10" >中継技術制作、ENG取材、VTR取材、放送関連サービス業、</td>
+                </tr>
+                <tr> 
+                  <td class="font2_10_b"> 
+                    <div align="right"></div>
+                  </td>
+                  <td  width="10">　</td>
+                  <td class="font2_10" >各種イベントの企画・制作、IT関連サービス業 </td>
+                </tr>
+              </table>
+              <p><img src="images/line.gif" width="500" height="10"></p>
+              <table width="500" border="0" cellspacing="0" cellpadding="0">
+                <tr> 
+                  <td class="medium"><img src="images/img0303_04.gif" width="67" height="33" vspace="5" border="0"></td>
+                </tr>
+                <tr> 
+                  <td class="medium"><a target=_blank href="http://www.c3film.co.jp/" class="font2_12_b">株式会社シースリーフィルム</a></td>
+                </tr>
+              </table>
+              <br>
+              <table width="500" border="0" cellpadding="0" cellspacing="0" class="font2_10">
+                <tr> 
+                  <td width="100" class="font2_10_b"> 
+                    <div align="right">所在地</div>
+                  </td>
+                  <td width="10" ><img src="images/spacer.gif" width="10" height="1"></td>
+                  <td width="470" class="font2_10" colspan="2" >◆東京本社</td>
+                </tr>
+                <tr> 
+                  <td class="font2_10_b"> 
+                    <div align="right"></div>
+                  </td>
+                  <td  width="10">　</td>
+                  <td class="font2_10" colspan="2" >〒104-0061東京都中央区銀座2-12-14銀座島ビル</td>
+                </tr>
+                <tr> 
+                  <td class="font2_10_b"> 
+                    <div align="right"></div>
+                  </td>
+                  <td  width="10">　</td>
+                  <td class="font2_10" colspan="2" >TEL:03-3524-1761</td>
+                </tr>
+                <tr> 
+                  <td class="font2_10_b"> 
+                    <div align="right"></div>
+                  </td>
+                  <td  width="10">　</td>
+                  <td class="font2_10" colspan="2" >◆大阪支社</td>
+                </tr>
+                <tr> 
+                  <td class="font2_10_b"> 
+                    <div align="right"></div>
+                  </td>
+                  <td  width="10">　</td>
+                  <td class="font2_10" colspan="2" >〒530-0047　大阪市北区西天満6-5-17デジタルエイトビル</td>
+                </tr>
+                <tr> 
+                  <td class="font2_10_b">　</td>
+                  <td  width="10">　</td>
+                  <td class="font2_10" colspan="2" >TEL:06-6315-3141</td>
+                </tr>
+                <tr> 
+                  <td class="font2_10_b">　</td>
+                  <td  width="10">　</td>
+                  <td class="font2_10" colspan="2" >◆名古屋支社</td>
+                </tr>
+                <tr> 
+                  <td class="font2_10_b">　</td>
+                  <td  width="10">　</td>
+                  <td class="font2_10" colspan="2" >名古屋市中区栄3-31-7大河内ビル</td>
+                </tr>
+                <tr> 
+                  <td class="font2_10_b">　</td>
+                  <td  width="10">　</td>
+                  <td class="font2_10" colspan="2" >TEL:052-261-7072</td>
+                </tr>
+                <tr> 
+                  <td class="font2_10_b"> 
+                    <div align="right">設立</div>
+                  </td>
+                  <td  width="10">　</td>
+                  <td class="font2_10" colspan="2" >1991年7月9日</td>
+                </tr>
+                <tr> 
+                  <td class="font2_10_b"> 
+                    <div align="right">資本金</div>
+                  </td>
+                  <td  width="10">　</td>
+                  <td class="font2_10" colspan="2" >9000万円</td>
+                </tr>
+                <tr> 
+                  <td class="font2_10_b"> 
+                    <div align="right">代表者</div>
+                  </td>
+                  <td  width="10">　</td>
+                  <td class="font2_10" width="200" >代表取締役会長</td>
+                  <td class="font2_10" width="270" >大富　國正</td>
+                </tr>
+                <tr> 
+                  <td class="font2_10_b"> 
+                    <div align="right"></div>
+                  </td>
+                  <td  width="10">　</td>
+                  <td class="font2_10" >取締役社長</td>
+                  <td class="font2_10" >松木　直</td>
+                </tr>
+                <tr> 
+                  <td class="font2_10_b"> 
+                    <div align="right">事業内容</div>
+                  </td>
+                  <td  width="10">　</td>
+                  <td class="font2_10" colspan="2" >テレビコマーシャルの企画制作</td>
+                </tr>
+                <tr> 
+                  <td class="font2_10_b"> 
+                    <div align="right"></div>
+                  </td>
+                  <td  width="10">　</td>
+                  <td class="font2_10" colspan="2" >ビデオソフト（VP、MV、展示映像）等、制作</td>
+                </tr>
+                <tr> 
+                  <td class="font2_10_b"> 
+                    <div align="right"></div>
+                  </td>
+                  <td  width="10">　</td>
+                  <td class="font2_10" colspan="2" >デジタルコンテンツ企画制作</td>
+                </tr>
+              </table>
+              <p><img src="images/line.gif" width="500" height="10"></p>
+              <table width="500" border="0" cellspacing="0" cellpadding="0">
+                <tr> 
+                  <td class="medium"><img src="images/img0303_05.gif" width="97" height="20" vspace="5" border="0"></td>
+                </tr>
+                <tr> 
+                  <td class="medium"><a target=_blank href="http://ns.to/express-brains/" class="font2_12_b">（株）エキスプレスブレーンズ</a></td>
+                </tr>
+              </table>
+              <br>
+              <table width="500" border="0" cellpadding="0" cellspacing="0" class="font2_10">
+                <tr> 
+                  <td width="100" class="font2_10_b"> 
+                    <div align="right">所在地</div>
+                  </td>
+                  <td width="10" ><img src="images/spacer.gif" width="10" height="1"></td>
+                  <td width="470" class="font2_10" >◆大阪</td>
+                </tr>
+                　 
+                <tr> 
+                  <td class="font2_10_b"> 
+                    <div align="right"></div>
+                  </td>
+                  <td  width="10">　</td>
+                  <td class="font2_10" >562-0035　箕面市船場東1-15-31　スタジオフレックス </td>
+                </tr>
+                <tr> 
+                  <td class="font2_10_b"> 
+                    <div align="right"></div>
+                  </td>
+                  <td  width="10">　</td>
+                  <td class="font2_10" >Phone: 0727-28-9611</td>
+                </tr>
+                <tr> 
+                  <td class="font2_10_b"> 
+                    <div align="right">設立</div>
+                  </td>
+                  <td  width="10">　</td>
+                  <td class="font2_10" >1995年7月15日 </td>
+                </tr>
+                <tr> 
+                  <td class="font2_10_b"> 
+                    <div align="right">資本金</div>
+                  </td>
+                  <td  width="10">　</td>
+                  <td class="font2_10" >1,700万円 </td>
+                </tr>
+                <tr> 
+                  <td class="font2_10_b"> 
+                    <div align="right">代表者</div>
+                  </td>
+                  <td  width="10">　</td>
+                  <td class="font2_10" >代表取締役社長　白江孝次 </td>
+                </tr>
+                <tr> 
+                  <td class="font2_10_b"> 
+                    <div align="right">事業内容</div>
+                  </td>
+                  <td  width="10">　</td>
+                  <td class="font2_10" >人材派遣事業（労働大臣許可　般 27-02-9001）、スタジオビル管理 </td>
+                </tr>
+              </table>
+              <p><img src="images/line.gif" width="500" height="10"></p>
+              <table width="500" border="0" cellspacing="0" cellpadding="0">
+                <tr> 
+                  <td class="medium"><img src="images/img0303_09.gif" width="87" height="19" vspace="5" border="0"></td>
+                </tr>
+                <tr> 
+                  <td class="medium"><a href="http://www.ktv.co.jp/ktv/company/west/index.html" class="font2_12_b" target="_blank">(株)ウエストワン</a></td>
+                </tr>
+              </table>
+              <br>
+              <table width="500" border="0" cellpadding="0" cellspacing="0" class="font2_10">
+                <tr> 
+                  <td width="100" class="font2_10_b"> 
+                    <div align="right">所在地</div>
+                  </td>
+                  <td width="10" ><img src="images/spacer.gif" width="10" height="1"></td>
+                  <td width="470" class="font2_10" >530-0047　大阪市北区西天満6-5-17 </td>
+                </tr>
+                <tr> 
+                  <td class="font2_10_b"> 
+                    <div align="right"></div>
+                  </td>
+                  <td >　</td>
+                  <td class="font2_10" >Phone:06-6315-2773</td>
+                </tr>
+                <tr> 
+                  <td class="font2_10_b"> 
+                    <div align="right">設立</div>
+                  </td>
+                  <td >　</td>
+                  <td class="font2_10" >1997年5月1日 </td>
+                </tr>
+                <tr> 
+                  <td class="font2_10_b"> 
+                    <div align="right">資本金</div>
+                  </td>
+                  <td >　</td>
+                  <td class="font2_10" >1,000万円 </td>
+                </tr>
+                <tr> 
+                  <td class="font2_10_b"> 
+                    <div align="right">代表者</div>
+                  </td>
+                  <td >　</td>
+                  <td class="font2_10" >代表取締役社長 由上靖雄 </td>
+                </tr>
+                <tr> 
+                  <td class="font2_10_b"> 
+                    <div align="right"></div>
+                  </td>
+                  <td >　</td>
+                  <td class="font2_10" >代表取締役常務 大谷正英 </td>
+                </tr>
+                <tr> 
+                  <td class="font2_10_b"> 
+                    <div align="right">事業内容</div>
+                  </td>
+                  <td >　</td>
+                  <td class="font2_10" >映像制作業務、ホール・舞台の照明、音響業務 </td>
+                </tr>
+              </table>
+              <p><img src="images/line.gif" width="500" height="10"></p>
+              <table width="500" border="0" cellspacing="0" cellpadding="0">
+                <tr> 
+                  <td class="medium"><img src="images/img0303_10.gif" width="50" height="25" vspace="5" border="0"></td>
+                </tr>
+                <tr> 
+                  <td class="medium"><a href="http://www.lavs.co.jp/" class="font2_12_b" target="_blank">（株）ラヴス</a></td>
+                </tr>
+              </table>
+              <br>
+              <table width="500" border="0" cellpadding="0" cellspacing="0" class="font2_10">
+                <tr> 
+                  <td width="100" class="font2_10_b"> 
+                    <div align="right">所在地</div>
+                  </td>
+                  <td width="10" ><img src="images/spacer.gif" width="10" height="1"></td>
+                  <td width="470" class="font2_10" >◆本社オフィス</td>
+                </tr>
+                <tr> 
+                  <td class="font2_10_b"> 
+                    <div align="right"></div>
+                  </td>
+                  <td >　</td>
+                  <td class="font2_10" >530-0047　大阪市北区西天満6-5-17 　 </td>
+                </tr>
+                <tr> 
+                  <td class="font2_10_b"> 
+                    <div align="right"></div>
+                  </td>
+                  <td >　</td>
+                  <td class="font2_10" >Phone:06-6315-3123（代表）</td>
+                </tr>
+                <tr> 
+                  <td class="font2_10_b"> 
+                    <div align="right">設立</div>
+                  </td>
+                  <td >　</td>
+                  <td class="font2_10" >1985年7月6日 </td>
+                </tr>
+                <tr> 
+                  <td class="font2_10_b"> 
+                    <div align="right">資本金</div>
+                  </td>
+                  <td >　</td>
+                  <td class="font2_10" >1,500万円 </td>
+                </tr>
+                <tr> 
+                  <td class="font2_10_b"> 
+                    <div align="right">代表者</div>
+                  </td>
+                  <td >　</td>
+                  <td class="font2_10" > 代表取締役社長　大富國正 </td>
+                </tr>
+                <tr> 
+                  <td class="font2_10_b"> 
+                    <div align="right">事業内容</div>
+                  </td>
+                  <td >　</td>
+                  <td class="font2_10" >ホテル・会館・イベント等の照明.音響、映像製作 </td>
+                </tr>
+              </table>
+              <p><img src="images/line.gif" width="500" height="10"></p>
+              <table width="500" border="0" cellspacing="0" cellpadding="0">
+                <tr> 
+                  <td class="medium"><img src="images/img0303_11.gif" width="45" height="29" vspace="5" border="0"></td>
+                </tr>
+                <tr> 
+                  <td class="font2_12_b">（株）エイ・アイ・シー</td>
+                </tr>
+              </table>
+              <br>
+              <table width="500" border="0" cellpadding="0" cellspacing="0" class="font2_10">
+                <tr> 
+                  <td width="100" class="font2_10_b"> 
+                    <div align="right">所在地</div>
+                  </td>
+                  <td width="10" ><img src="images/spacer.gif" width="10" height="1"></td>
+                  <td width="470" class="font2_10" >530-0047　大阪市北区西天満6-5-17 　 
+                  </td>
+                </tr>
+                <tr> 
+                  <td class="font2_10_b"> 
+                    <div align="right"></div>
+                  </td>
+                  <td >　</td>
+                  <td class="font2_10" >Phone:06-6315-3188（代表） </td>
+                </tr>
+                <tr> 
+                  <td class="font2_10_b"> 
+                    <div align="right">設立</div>
+                  </td>
+                  <td >　</td>
+                  <td class="font2_10" >1975年2月21日 </td>
+                </tr>
+                <tr> 
+                  <td class="font2_10_b"> 
+                    <div align="right">資本金</div>
+                  </td>
+                  <td >　</td>
+                  <td class="font2_10" >1,000万円 </td>
+                </tr>
+                <tr> 
+                  <td class="font2_10_b"> 
+                    <div align="right">代表者</div>
+                  </td>
+                  <td >　</td>
+                  <td class="font2_10" >代表取締役社長 大富國正</td>
+                </tr>
+                <tr> 
+                  <td class="font2_10_b"> 
+                    <div align="right">事業内容</div>
+                  </td>
+                  <td >　</td>
+                  <td class="font2_10" >タレント・催事出演者のメイキャップ </td>
+                </tr>
+              </table>
+              <p><img src="images/line.gif" width="500" height="10"></p>
+              <table width="500" border="0" cellspacing="0" cellpadding="0">
+                <tr> 
+                  <td class="medium"><img src="images/shanghai_logo.gif" width="85" height="30" vspace="5" border="0"></td>
+                </tr>
+                <tr> 
+                  <td class="font2_12_b" height="17"><a href="http://shanghai.express.co.jp/" target="_blank" class="font2_12_b">（株）上海迅亜商務諮詢有限公司-Express 
+                    Shanghai CO.,Lｔｄ.</a></td>
+                </tr>
+              </table>
+              <br>
+              <table width="500" border="0" cellpadding="0" cellspacing="0" class="font2_10">
+                <tr> 
+                  <td width="100" class="font2_10_b"> 
+                    <div align="right">所在地</div>
+                  </td>
+                  <td width="10" ><img src="images/spacer.gif" width="10" height="1"></td>
+                  <td width="470" class="font2_10" >上海市黄浦区北京東路666号 </td>
+                </tr>
+                <tr> 
+                  <td class="font2_10_b"> 
+                    <div align="right"></div>
+                  </td>
+                  <td >　</td>
+                  <td class="font2_10" >上海科技京城東楼19F-A</td>
+                </tr>
+                <tr> 
+                  <td class="font2_10_b"> 
+                    <div align="right">設立</div>
+                  </td>
+                  <td >　</td>
+                  <td class="font2_10" >2003年5月22日</td>
+                </tr>
+                <tr> 
+                  <td class="font2_10_b"> 
+                    <div align="right">資本金</div>
+                  </td>
+                  <td >　</td>
+                  <td class="font2_10" >140,000USD（2004年1月300万RMBに増資予定）</td>
+                </tr>
+                <tr> 
+                  <td class="font2_10_b"> 
+                    <div align="right">代表者</div>
+                  </td>
+                  <td >　</td>
+                  <td class="font2_10" >法人代表　梅田　豊</td>
+                </tr>
+                <tr> 
+                  <td class="font2_10_b"> 
+                    <div align="right">事業内容</div>
+                  </td>
+                  <td >　</td>
+                  <td class="font2_10" >投資コンサルタント、通信技術コンサルタント</td>
+                </tr>
+                <tr> 
+                  <td class="font2_10_b"> 
+                    <div align="right"></div>
+                  </td>
+                  <td >　</td>
+                  <td class="font2_10" >市場調査コンサルタント、配信代行サービス</td>
+                </tr>
+              </table>
+              <p><img src="images/line.gif" width="500" height="10"></p>
+              <table width="500" border="0" cellspacing="0" cellpadding="0">
+                <tr> 
+                  <td class="medium"><img src="images/e-touch.gif" width="45" height="40" vspace="5" border="0"></td>
+                </tr>
+                <tr> 
+                  <td class="font2_12_b" height="17"><a href="http://www.e-touch.com.cn/" target="_blank" class="font2_12_b">（株）上海易触通迅科技有限公司-E-touch 
+                    CO.,Lｔｄ.</a></td>
+                </tr>
+              </table>
+              <br>
+              <table width="500" border="0" cellpadding="0" cellspacing="0" class="font2_10">
+                <tr> 
+                  <td width="100" class="font2_10_b"> 
+                    <div align="right">所在地</div>
+                  </td>
+                  <td width="10" ><img src="images/spacer.gif" width="10" height="1"></td>
+                  <td width="470" class="font2_10" >上海市黄浦区北京東路666号</td>
+                </tr>
+                <tr> 
+                  <td class="font2_10_b"> 
+                    <div align="right"></div>
+                  </td>
+                  <td >　</td>
+                  <td class="font2_10" >上海科技京城東楼19F-A</td>
+                </tr>
+                <tr> 
+                  <td class="font2_10_b"> 
+                    <div align="right">設立</div>
+                  </td>
+                  <td >　</td>
+                  <td class="font2_10" >2003年6月3日</td>
+                </tr>
+                <tr> 
+                  <td class="font2_10_b"> 
+                    <div align="right">資本金</div>
+                  </td>
+                  <td >　</td>
+                  <td class="font2_10" >1,000,000RMB（2004年1月300万RMBに増資予定）</td>
+                </tr>
+                <tr> 
+                  <td class="font2_10_b" height="16"> 
+                    <div align="right">代表者</div>
+                  </td>
+                  <td height="16" >　</td>
+                  <td height="16" class="font2_10" >執行董事 　李　勝娟</td>
+                </tr>
+                <tr> 
+                  <td class="font2_10_b"> 
+                    <div align="right">事業内容</div>
+                  </td>
+                  <td >　</td>
+                  <td class="font2_10" >インターネット情報サービス、移動電話SMS、</td>
+                </tr>
+                <tr> 
+                  <td class="font2_10_b" height="15">　</td>
+                  <td height="15" >　</td>
+                  <td height="15" class="font2_10" >MMSサービス及び上記に関わるコンサルタント業務</td>
+                </tr>
+              </table>
+              <p><img src="images/line.gif" width="500" height="10"></p>
+            </div>
+          </td>
+        </tr>
+        <tr> 
+          <td width="161">　</td>
+          <td height="25"> 
+            <div align="right" class="font_m">|| <a href="index.php">HOME</a> 
+              || <a href="01.php">インフォメーション</a> || <a href="02.html">企業情報</a> 
+              || <a href="03.html">業務内容</a> || <a href="04.php">採用情報</a> || <a href="05.php">お問合せ</a> 
+              || <a href="06.html">サイトマップ</a> || <a href="07.html">English</a> 
+              ||<img src="images/spacer.gif" width="8" height="8"><br>
+              <img src="images/white.gif" width="1" height="15"> </div>
+          </td>
+        </tr>
+      </table>
+    </td>
+    <td>　</td>
+  </tr>
+  <tr> 
+    <td width="770" height="15" bgcolor="2D2E2E"> 
+      <div align="right" class="copyright">Copyright:(C)2003 Brains., All Right Reserved.</div>
+    </td>
+    <td bgcolor="2D2E2E">　</td>
+  </tr>
+</table>
+</body>
+<!-- InstanceEnd --></html>

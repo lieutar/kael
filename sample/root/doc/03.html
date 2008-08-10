@@ -1,0 +1,170 @@
+<?
+ini_set("include_path",	ini_get("include_path") .
+	( substr(php_uname(),0,7) == "Windows"
+	  ? ";..\\php_lib"
+	  : ":../php_lib" ));
+
+include_once("RPS_DB.php");
+include_once("RPS_LIB.php");
+
+
+$db = new RPS_DB("./admin/data/info"         ,
+		 array("ttl", "ctgl", "info"),
+		 true);
+
+?>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><!-- InstanceBegin template="/Templates/reds.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=EUC-JP">
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>Brains</title>
+<!-- InstanceEndEditable -->
+<meta name="Keywords" content="ホームページ制作 ソリューション 新規事業開発 デザイン メディア戦略">
+<meta name="Description" content="ハイクオリティな技術と最適なデザインでユニークかつ魅力的なソリューションをお客様にご提供">
+<link href="css/bg.css" rel="stylesheet" type="text/css">
+<!-- InstanceBeginEditable name="head" --><!-- InstanceEndEditable -->
+<meta name="description" content="FW MX DW MX HTML">
+
+<link rel="stylesheet" href="css/bg.css" type="text/css">
+</head>
+<body leftmargin="0" topmargin="0" marginwidth="0" marginheight="0" class="bg" text="#666666" link="#333333" vlink="#333333">
+<table width="100%" border="0" cellspacing="0" cellpadding="0" height="100%">
+  <tr> 
+    <td width="770" height="170" background="images/bg_business.gif"><object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=5,0,0,0" width="770" height="170">
+        <param name=movie value="swf/busi.swf">
+        <param name=quality value=high>
+        <embed src="swf/busi.swf" quality=high pluginspage="http://www.macromedia.com/jp/shockwave/download/index.cgi?P1_Prod_Version=ShockwaveFlash" type="application/x-shockwave-flash" width="770" height="170">
+        </embed> 
+      </object></td>
+    <td background="images/bg_business.gif">　</td>
+  </tr>
+  <tr> 
+    <td width="770">
+      <table width="770" border="0" cellspacing="0" cellpadding="0" class="main_box" height="100%">
+        <tr> 
+          <td width="161" rowspan="2">　</td>
+          <td> 
+            <div align="center"> 
+              <table width="560" border="0" cellspacing="0" cellpadding="10">
+                <tr> 
+                  <td>
+                    <div align="center">
+                      <table width="500" border="1" cellspacing="0" cellpadding="5" bordercolor="#D6D3B1" background="images/busi_yellow.gif">
+                        <tr> 
+                          <td> 
+                            <div align="center">
+                              <table width="100%" border="0" cellspacing="0" cellpadding="2">
+                                <tr> 
+                                  <td><span class="font2_12_employ"><img src="images/busi_ya.gif" width="14" height="10"><img src="images/spacer.gif" width="8" height="8">放送局、制作会社等への制作、技術スタッフの派遣サービス</span><span class="font2_12"></span></td>
+                                  <td width="90">　</td>
+                                </tr>
+                                <tr> 
+                                  <td><span class="font2_12_employ"><img src="images/busi_ya.gif" width="14" height="10"><img src="images/spacer.gif" width="8" height="8">ブロードバンド企業への制作、技術スタッフの派遣サービス</span></td>
+                                  <td rowspan="4"> 
+                                    <div align="right"></div>
+                                  </td>
+                                </tr>
+                                <tr> 
+                                  <td><span class="font2_12_employ"><img src="images/busi_ya.gif" width="14" height="10"><img src="images/spacer.gif" width="8" height="8">放送局、制作会社等の番組制作請負サービス</span></td>
+                                </tr>
+                                <tr> 
+                                  <td><span class="font2_12_employ"><img src="images/busi_ya.gif" width="14" height="10"><img src="images/spacer.gif" width="8" height="8">ホール、展示場における機材等の管理、運営サービス</span></td>
+                                </tr>
+                                <tr> 
+                                  <td><span class="font2_12_employ"><img src="images/busi_ya.gif" width="14" height="10"><img src="images/spacer.gif" width="8" height="8">スポーツイベント、社内イベント等への司会者派遣サービス</span></td>
+                                </tr>
+                              </table>
+                            </div>
+                          </td>
+                        </tr>
+                      </table>
+                      <img src="images/spacer.gif" width="1" height="20"><br>
+                      <table width="500" border="0" cellspacing="0" cellpadding="2">
+                        <tr>
+                          <td class="font2_12_b">【主な派遣スタッフ】</td>
+                        </tr>
+                        <tr>
+                          <td class="font2_12_employ">プロデューサー・ディレクター、アシスタントプロデューサー・アシスタントディレクター・ｶﾒﾗﾏﾝ・ミキサー・アナウンサー・スポーツＣＧ・アシスタント・一般事務</td>
+                        </tr>
+                        <tr>
+                          <td><img src="images/spacer.gif" width="1" height="15"></td>
+                        </tr>
+                        <tr>
+                          <td class="font2_12_b">【派遣スタッフ配属フロー】</td>
+                        </tr>
+                        <tr>
+                          <td><span class="font2_12_employ">（１）派遣のご依頼</span><span class="font2_12"><br>
+                            必要なスタッフ、人数及び派遣期間等をご相談下さい。</span></td>
+                        </tr>
+                        <tr>
+                          <td><img src="images/spacer.gif" width="1" height="10"></td>
+                        </tr>
+                        <tr>
+                          <td><span class="font2_12_employ">（２）見積もり・候補者選定</span><span class="font2_12"><br>
+                            派遣スタッフは、社員・契約社員・長期ｱﾙﾊﾞｲﾄ等の中から選定致します。</span></td>
+                        </tr>
+                        <tr>
+                          <td><img src="images/spacer.gif" width="1" height="10"></td>
+                        </tr>
+                        <tr>
+                          <td height="27"><span class="font2_12_employ">（３）スケジューリング・契約内容確認</span><span class="font2_12"><br>
+                            派遣スタッフの就業内容等の確認及びスケジュールを作成します。</span></td>
+                        </tr>
+                        <tr>
+                          <td><img src="images/spacer.gif" width="1" height="10"></td>
+                        </tr>
+                        <tr>
+                          <td><span class="font2_12_employ">（４）派遣就業指示</span><span class="font2_12"><br>
+                            派遣スタッフ決定後、配属前の研修を行います。</span></td>
+                        </tr>
+                        <tr>
+                          <td><img src="images/spacer.gif" width="1" height="10"></td>
+                        </tr>
+                        <tr>
+                          <td><span class="font2_12_employ">（５）スタッフ派遣</span><span class="font2_12"><br>
+                            派遣スタッフ配属開始。</span></td>
+                        </tr>
+                        <tr>
+                          <td><img src="images/spacer.gif" width="1" height="10"></td>
+                        </tr>
+                        <tr>
+                          <td><span class="font2_12_employ">（６）派遣スタッフ管理</span><span class="font2_12"><br>
+                            派遣スタッフの管理については、本社デスクにて行います。</span></td>
+                        </tr>
+                        <tr>
+                          <td><img src="images/spacer.gif" width="1" height="10"></td>
+                        </tr>
+                      </table>
+                      
+                    </div>
+                    </td>
+                </tr>
+              </table>
+              
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td height="25"> 
+            <div align="right" class="font_m">|| <a href="index.php">HOME</a> 
+              || <a href="01.php">インフォメーション</a> || <a href="02.html">企業情報</a> 
+              || <a href="03.html">業務内容</a> || <a href="04.php">採用情報</a> || <a href="05.php">お問合せ</a> 
+              || <a href="06.html">サイトマップ</a> || <a href="07.html">English</a> 
+              ||<img src="images/spacer.gif" width="5" height="1"><br>
+              <img src="images/white.gif" width="1" height="15"> </div>
+          </td>
+        </tr>
+      </table>
+    </td>
+    <td>　</td>
+  </tr>
+  <tr> 
+    <td width="770" height="15" bgcolor="2D2E2E"> 
+      <div align="right" class="copyright">Copyright:(C)2003 Brains., All Right Reserved.</div>
+    </td>
+    <td bgcolor="2D2E2E">　</td>
+  </tr>
+</table>
+</body>
+<!-- InstanceEnd --></html>

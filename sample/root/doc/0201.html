@@ -1,0 +1,189 @@
+<?
+ini_set("include_path",	ini_get("include_path") .
+	( substr(php_uname(),0,7) == "Windows"
+	  ? ";..\\php_lib"
+	  : ":../php_lib" ));
+
+include_once("RPS_DB.php");
+include_once("RPS_LIB.php");
+
+
+$db = new RPS_DB("./admin/data/info"         ,
+		 array("ttl", "ctgl", "info"),
+		 true);
+
+?>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><!-- InstanceBegin template="/Templates/reds.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=EUC-JP">
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>Brains</title>
+<!-- InstanceEndEditable -->
+<meta name="Keywords" content="ホームページ制作 ソリューション 新規事業開発 デザイン メディア戦略">
+<meta name="Description" content="ハイクオリティな技術と最適なデザインでユニークかつ魅力的なソリューションをお客様にご提供">
+<link href="css/bg.css" rel="stylesheet" type="text/css">
+<!-- InstanceBeginEditable name="head" --><!-- InstanceEndEditable -->
+<meta name="description" content="FW MX DW MX HTML">
+
+<link rel="stylesheet" href="css/bg.css" type="text/css">
+</head>
+<body leftmargin="0" topmargin="0" marginwidth="0" marginheight="0" class="bg" text="#666666" link="#333333" vlink="#333333">
+<table width="100%" border="0" cellspacing="0" cellpadding="0" height="100%">
+  <tr> 
+    <td width="770" height="170" background="images/bg_company.gif"><object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=5,0,0,0" width="770" height="170">
+        <param name=movie value="swf/company.swf">
+        <param name=quality value=high>
+        <embed src="swf/company.swf" quality=high pluginspage="http://www.macromedia.com/jp/shockwave/download/index.cgi?P1_Prod_Version=ShockwaveFlash" type="application/x-shockwave-flash" width="770" height="170">
+        </embed> 
+      </object></td>
+    <td background="images/bg_company.gif">　</td>
+  </tr>
+  <tr> 
+    <td width="770">
+      <table width="770" border="0" cellspacing="0" cellpadding="0" class="main_box" height="100%">
+        <tr> 
+          <td width="161" height="122
+		  "> 
+            <table border="0" cellpadding="0" cellspacing="0" width="159">
+              <!-- fwtable fwsrc="名称未設定" fwbase="company.gif" fwstyle="Dreamweaver" fwdocid = "742308039" fwnested="0" -->
+              <tr> 
+                <td><img src="img/spacer.gif" width="159" height="1" border="0"></td>
+                <td><img src="img/spacer.gif" width="1" height="1" border="0"></td>
+              </tr>
+              <tr> 
+                <td><a href="02.html"><img name="company_r1_c1" src="images/company1.gif" width="159" height="30" border="0"></a></td>
+                <td><img src="img/spacer.gif" width="1" height="30" border="0"></td>
+              </tr>
+              <tr> 
+                <td><img name="company_r2_c1" src="images/company_2.gif" width="159" height="30" border="0"></td>
+                <td><img src="img/spacer.gif" width="1" height="30" border="0"></td>
+              </tr>
+              <tr> 
+                <td><a href="0202.html" target="_parent"><img name="company_r3_c1" src="images/company3.gif" width="159" height="30" border="0"></a></td>
+                <td><img src="img/spacer.gif" width="1" height="30" border="0"></td>
+              </tr>
+              <tr> 
+                <td><a href="0203.html" target="_parent"><img name="company_r4_c1" src="images/company4.gif" width="159" height="30" border="0"></a></td>
+                <td><img src="img/spacer.gif" width="1" height="30" border="0"></td>
+              </tr>
+            </table>
+          </td>
+          <td height="200" rowspan="2"> 
+            <div align="center"> 
+              <table width="480" border="0" cellpadding="2" cellspacing="2" class="font2_12">
+                <tr> 
+                  <td  class="font2_12_b" width="94" bgcolor="#F1F5F2"> 
+                    <div align="right">社名</div>
+                  </td>
+                  <td  class="medium" width="4"> 
+                    <div align="right"></div>
+                  </td>
+                  <td  class="font2_12_com" bgcolor="#F3F3F3" colspan="2">株式会社ブレーンズ</td>
+                </tr>
+                <tr valign="top"> 
+                  <td class="font2_12_b" width="94" bgcolor="#F1F5F2" height="45" rowspan="3"> 
+                    <div align="right">所在地</div>
+                  </td>
+                  <td class="medium" width="4" height="45" rowspan="3"> 
+                    <div align="right"></div>
+                  </td>
+                  <td class="font2_12_employ" colspan="2" bgcolor="#F3F3F3" height="21">〒150-0002 
+                    東京都渋谷区渋谷1−6−10　Qビル3F</td>
+                </tr>
+                <tr valign="top"> 
+                  <td class="font2_12_employ" width="36" bgcolor="#F3F3F3" height="14"> 
+                    <div align="left">[TEL]</div>
+                  </td>
+                  <td class="font2_12_employ" width="420" bgcolor="#F3F3F3" height="14">(03)5464-9822</td>
+                </tr>
+                <tr valign="top"> 
+                  <td class="font2_12_employ" width="36" bgcolor="#F3F3F3" height="16"> 
+                    <div align="left">[FAX]</div>
+                  </td>
+                  <td class="font2_12_employ" width="420" bgcolor="#F3F3F3" height="16">(03)3407-6203</td>
+                </tr>
+                <tr> 
+                  <td class="font2_12_b" width="94" bgcolor="#F1F5F2"> 
+                    <div align="right">代表者</div>
+                  </td>
+                  <td class="medium" width="4"> 
+                    <div align="right"></div>
+                  </td>
+                  <td class="font2_12_employ" bgcolor="#F3F3F3" colspan="2">代表取締役社長　田村　堅三</td>
+                </tr>
+                <tr> 
+                  <td class="font2_12_b" width="94" bgcolor="#F1F5F2"> 
+                    <div align="right">設立 </div>
+                  </td>
+                  <td class="medium" width="4"> 
+                    <div align="right"></div>
+                  </td>
+                  <td class="font2_12_employ" bgcolor="#F3F3F3" colspan="2">2002年8月1日</td>
+                </tr>
+                <tr> 
+                  <td class="font2_12_b" width="94" bgcolor="#F1F5F2"> 
+                    <div align="right">資本金</div>
+                  </td>
+                  <td class="medium" width="4"> 
+                    <div align="right"></div>
+                  </td>
+                  <td class="font2_12_employ" bgcolor="#F3F3F3" colspan="2">1000万円</td>
+                </tr>
+                <tr> 
+                  <td class="font2_12_b" width="94" bgcolor="#F1F5F2"> 
+                    <div align="right">株主</div>
+                  </td>
+                  <td class="medium" width="4"> 
+                    <div align="right"></div>
+                  </td>
+                  <td class="font2_12_employ" bgcolor="#F3F3F3" colspan="2">株式会社エキスプレス</td>
+                </tr>
+                <tr valign="top"> 
+                  <td class="font2_12_b" width="94" bgcolor="#F1F5F2"> 
+                    <div align="right">事業内容</div>
+                  </td>
+                  <td class="medium" width="4"> 
+                    <div align="right"></div>
+                  </td>
+                  <td class="font2_12_employ" bgcolor="#F3F3F3" colspan="2"> 一般労働者派遣業（般13−07−0510） 
+              </table>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td width="161" height="111">　</td>
+        </tr>
+        <tr> 
+          <td width="161">　</td>
+          <td>　</td>
+        </tr>
+        <tr> 
+          <td width="161">　</td>
+          <td height="25"> 
+            <div align="right" class="font_m">|| <a href="index.php">HOME</a> 
+              || <a href="01.php">インフォメーション</a> 
+              || <a href="02.html">企業情報</a> 
+              || <a href="03.html">業務内容</a> 
+              || <a href="04.php">採用情報</a> 
+              || <a href="05.php">お問合せ</a> 
+              || <a href="06.html">サイトマップ</a> 
+              || <a href="07.html">English</a> 
+              ||<img src="images/spacer.gif" width="10" height="8"><br>
+              <img src="images/spacer.gif" width="1" height="10"> <br>
+              <img src="images/white.gif" width="1" height="15"> </div>
+          </td>
+        </tr>
+      </table>
+    </td>
+    <td>　</td>
+  </tr>
+  <tr> 
+    <td width="770" height="15" bgcolor="2D2E2E"> 
+      <div align="right" class="copyright">Copyright:(C)2003 Brains., All Right Reserved.</div>
+    </td>
+    <td bgcolor="2D2E2E">　</td>
+  </tr>
+</table>
+</body>
+<!-- InstanceEnd --></html>
