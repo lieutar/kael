@@ -6,7 +6,6 @@ use KaeL::Cfg::CORE;
 use KaeL::CONSTANTS;
 use KaeL::Types qw( Dir File URI );
 use CGI::Simple;
-use PerlDSL::Perl;
 use DateTime;
 use KaeL::HTTP::Response;
 use KaeL::HTTP::Request;
@@ -14,11 +13,8 @@ use KaeL::User;
 use KaeL::Util;
 use Path::Class;
 use HTTP::Status;
-use KaeL::Task::Script;
-use KaeL::Task::Call;
 use KaeL::Task::CODE;
 use KaeL::Task::DefaultError;
-use KaeL::Cache::Script;
 
 has root => ( is       => 'ro',
               isa      => Dir,
@@ -67,12 +63,6 @@ has user   => ( is      => 'ro',
                   KaeL::User->new( app => $self );
                 } );
 
-has _script_cache => ( is      => 'ro',
-                       lazy    => 1,
-                       default => sub{
-                         my $self = shift;
-                         KaeL::Cache::Script->new( core => $self );
-                       } );
 
 
 sub initial_task {
@@ -140,71 +130,33 @@ sub log {
 
 
 {
-  my $prepare = sub{
+
+  sub _script_subs{
+    my $self = shift;
+    use KaeL::ScriptSubs::CORE;
+    KaeL::ScriptSubs::CORE->new( core => $self )->subs;
+  }
+
+  sub _prepare_script_args{
     my $self = shift;
     my @head = @_ % 2 ? ( shift @_ ) : ();
     (
      @head,
-     #-permit  => [ ':all' ],
-     #-deny    => [ 'exit' ],
      -no_safe => 1,
-     PROJECT_ROOT => sub{ $self->root },
-     lazy    => \&KaeL::Util::lazy,
-     delay   => \&KaeL::Util::delay,
-     core    => sub { $self },
-     cfg     => sub { $self->cfg },
-     date    => sub { return DateTime->now unless @_;
-                      DateTime->new( @_ ) },
-     req     => sub { $self->req; },
-     res     => sub { $self->res; },
-     header  => sub { $self->res->header(@_) },
-     log     => sub { $self->log( process_log(@_) ) },
-     body    => sub { $self->res->content(@_) },
-     content => sub { $self->res->content(@_) },
-     script  => sub { $self->script(@_) },,
-     call    => sub { KaeL::Task::Call->new( callee => shift,
-                                             exprs  => [ @_ ] ) },
-     blessed => \&blessed,
-     with    => sub(&@) {@_},
-     error   => sub { $self->error(@_) },
-
-     PerlDSL::Subs::FileUtil->subs,
-
-     ( map{
-       my $m = $_;
-       ( $m , sub{ $self->$m(@_) } )
-     } qw(escapeHTML) ),
-
-     ( map{
-       /\ARC_[A-Z_]+\Z/ ? ( $_ , HTTP::Status->can($_) ) : ();
-     } @HTTP::Status::EXPORT ),
-
-     ( map {
-       my $m = $_;
-       ( $m , sub{ $self->req->$m(@_) ; } )
-     } ( @KaeL::HTTP::Request::CGIMETHODS,
-         qw( user ) ),
-     ),
+     $self->_script_subs,
      @_
     )
   };
 
   sub compilescript {
-    PerlDSL::Perl::compilescript( $prepare->( @_ ) );
+    PerlDSL::Perl::compilescript( _prepare_script_args( @_ ) );
   }
 
   sub runscript {
-    PerlDSL::Perl::runscript( $prepare->( @_ ) );
+    PerlDSL::Perl::runscript( _prepare_script_args( @_ ) );
   }
 
-  sub script{
-    my $self = shift;
-    my $script = shift;
-    $self->_script_cache->get( $script );
-  }
 }
-
-
 
 1;
 __END__

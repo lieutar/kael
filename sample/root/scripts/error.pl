@@ -6,11 +6,10 @@ header
 
 my $status_msg = res->status_line;
 
-warn $msg;
-
 my %description =
   (
-   '500' =>  'Following error is occured.',
+   404 => sub{ sprintf("requested resource '%s' is not exists.", req->uri) },
+   500 => sub{ 'Following error is occured.' },
   );
 
 my @bg = (
@@ -57,11 +56,11 @@ content join
    '<body>',
    '<h1>'.escapeHTML($status_msg).'</h1>',
    '<p>',
-   escapeHTML( $description{$code} or '' ),
+   escapeHTML( ($description{$code} or sub{''})->() ),
    '</p>',
-   '<pre>',
-   escapeHTML( $msg ),
-   '</pre>',
+   ( $msg ? ( '<pre>',
+              escapeHTML( $msg ),
+              '</pre>' ) : () ),
    '</body>',
    '</html>'
   );

@@ -37,32 +37,15 @@ But the spell of it is not regular spelling in Japanese roma-ji .
 
 our $VERSION = '0.01';
 
-use Moose;
-use UNIVERSAL::require;
-use KaeL::CORE;
-use Sub::Exporter
-  -setup => { exports => [qw( run )],
-              groups  => { default => [qw( :all )]}};
+use strict;
+use warnings;
 
-sub usage {
-  my $err = shift;
-  print "$err\n" if $err;
-  print "usage:\n";
-  exit;
-}
-
-
-sub run {
-  my $driver_name = shift @ARGV;
-  usage unless $driver_name;
-  my $driver_class = "KaeL::Driver::$driver_name";
-  local $@ = undef;
-  eval "require $driver_class;";
-  usage $@ if $@;
-  my $core = KaeL::CORE->new( @ARGV );
-  my $driver = $driver_class->new( @ARGV,
-                                   core => $core );
-  $driver->run;
+sub import {
+  my $pkg = shift;
+  if( $0 eq '-e' or ( $_[0] and $_[0] eq '-cmd' ) ){
+    require KaeL::CMD;
+    goto \&KaeL::CMD::import;
+  }
 }
 
 1; # End of KaeL::CORE

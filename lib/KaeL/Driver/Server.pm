@@ -29,6 +29,7 @@ sub msg {
 
 sub run {
   my $self = shift;
+  $self->msg('run server ...');
 
   POE::Session->create
       (
@@ -97,7 +98,9 @@ sub client_input {
     $runner->env->req( $req );
     $runner->env->user->addr( $con->peer_addr );
     $runner->env->user->host( $con->peer_host );
-    $self->msg("connection from ". $con->peer_addr);
+    $self->msg(sprintf("%s -> %s ",
+                       $con->peer_addr,
+                       $uri));
 
     $res = eval{ $runner->run; };
     $self->msg( $@ ) if $@;

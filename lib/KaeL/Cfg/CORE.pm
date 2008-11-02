@@ -60,6 +60,7 @@ has session_db =>
       }
     } );
 
+
 sub additional_functions {}
 
 1

@@ -14,7 +14,6 @@ It knows its behavior and its data and its continuation.
 =head1 ATTRIBUTES
 
 =cut
-
  
 has core =>
   ( is       => 'rw',
